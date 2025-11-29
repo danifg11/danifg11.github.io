@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Daniel Florinel Gidea - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <div>
+          <h1 class="title">Daniel Florinel Gidea</h1>
+          <p class="subtitle">
+            Estudiante en Ingeniería de Software | Desarrollador FullStack
+            Junior
+          </p>
+        </div>
+        <nav class="nav">
+          <a href="#projects">Proyectos</a>
+          <a href="#skills">Skills</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <h2>Sobre mi</h2>
+            <p>
+              Estudiante de Ingeniería de Software y apasionado por
+              el desarrollo. Me muevo muy cómodo en backend con Java, aunque
+              también he trabajado en proyectos full-stack donde puedo
+              controlar tanto la API como el frontend.
+              He desarrollado varios proyectos reales como una intranet
+              empresarial, un portal de talleres mecánicos con sistema de citas
+              y un plano interactivo con Vue + Konva. Me gusta aprender
+              tecnologías nuevas, escribir código claro y entender bien cómo
+              funcionan las cosas por dentro. Ahora busco seguir mejorando
+              como desarrollador y participar en proyectos donde pueda aportar y
+              crecer.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn primary">Ver proyectos</a>
+              <a
+                href="CV DanielGidea Copia.pdf"
+                class="btn secondary"
+                target="_blank"
+                rel="noopener"
+              >
+                Descargar CV
+              </a>
+              <!-- NUEVO (pon aquí tu PDF real) -->
+              <a href="#contact" class="btn secondary">Contactar</a>
+            </div>
+          </div>
+
+          <!-- NUEVO: tarjeta con foto -->
+          <div class="hero-card profile-card">
+            <img src="Foto.jpg" class="profile-photo" />
+            <ul class="hero-list">
+              <li><strong>Ubicación:</strong> Madrid</li>
+              <li>
+                <strong>Rol:</strong> Estudiante de Ingeniería de Software |
+                Desarrollador FullStack
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Proyectos</h2>
+          <p class="section-intro"></p>
+          <div class="grid">
+            <article class="card">
+              <h3>Portal de Gestión de Talleres Mecánicos (TFG)</h3>
+              <p>
+                Plataforma full-stack para la gestión completa de talleres
+                mecánicos y mecánicos freelance. Incluye sistema de citas,
+                gestión de clientes y vehículos, control de roles
+                (admin/empleado), panel de administración, y autenticación
+                segura con JWT. El proyecto integra API REST desarrollada en
+                Java con arquitectura en capas, conectada a PostgreSQL, y un
+                frontend en Vue. Permite dar de alta talleres como
+                administrador, visualizar citas, gestionar disponibilidad y
+                administrar empleados del taller. Como usuario normal, puedes
+                agregar tu vehículo y gestionar citas para los diferentes
+                talleres que están dados de alta.
+              </p>
+              <p class="tech">
+                Java · REST API · JWT · PostgreSQL · Vue 3 · Ionic · Vite ·
+                Pinia · TypeScript · Node.js
+              </p>
+              <div class="card-links">
+                <a href="#" target="_blank">Repositorio (GitHub) </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Intranet empresarial</h3>
+              <p>
+                Intranet full-stack desarrollada para centralizar la gestión
+                interna de una empresa. Incluye autenticación con JWT, control
+                de roles (admin/empleado),cifrado de contraseñas, notificaciones
+                internas, panel de administración, y CRUD completo de empleados
+                con filtros y permisos avanzados. El sistema solo le permite al
+                administrador crear nuevos empleados, gestionar y cambiar sus
+                datos, subir las nóminas de cada empleado y gestionar las
+                peticiones de vacaciones de cada empleado. Construido con
+                arquitectura en capas, base de datos relacional y frontend
+                moderno con diseño responsive orientado a móviles.
+              </p>
+              <p class="tech">
+                Java · REST API · JWT · PostgreSQL/MySQL · Vue 3 (HTML5, CSS,
+                JavaScript) · Vite · Pinia · Ionic · TypeScript · Node.js
+              </p>
+              <div class="card-links">
+                <a href="#" target="_blank">Repositorio (GitHub)</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Plano Interactivo</h3>
+              <p>
+                API sencilla para gestionar tareas con autenticación JWT,
+                pensada para practicar patrones de arquitectura limpia y buenas
+                prácticas en Java.
+              </p>
+              <p class="tech">Java · Maven · REST · JWT · PostgreSQL</p>
+              <div class="card-links">
+                <a href="#" target="_blank">Repositorio (GitHub)</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2>Habilidades</h2>
+          <div class="skills-grid">
+            <div>
+              <h3>Backend</h3>
+              <ul>
+                <li>Java · Maven</li>
+                <li>APIs REST · JWT</li>
+                <li>Arquitectura por capas MVC</li>
+                <li>PostgreSQL, MySQL, MongoDB</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Frontend</h3>
+              <ul>
+                <li>Vue 3 · Vite</li>
+                <li>Ionic · TypeScript</li>
+                <li>HTML5 · CSS3</li>
+                <li>JavaScript</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Otros</h3>
+              <ul>
+                <li>GitBash</li>
+                <li>GitHub</li>
+                <li>PowerShell</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NUEVO: CV / EXPERIENCIA -->
+      <section id="cv" class="section alt">
+        <div class="container cv-grid">
+          <div>
+            <h2>Formación</h2>
+            <ul class="cv-list">
+              <li>
+                <strong>Grado en Ingeniería de Software</strong><br />
+                U-TAD - Actual
+              </li>
+              <li>
+                <strong>Ciclo Formativo de Grado Superior</strong><br />
+                Desarrollo de Aplicaciones Multiplataforma 2023-2025
+              </li>
+              <li>
+                <strong>Bachillerato Científico</strong><br />
+                IES Velázquez 2020-2022
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contacto</h2>
+          <div class="contact-list">
+            <p><strong>Email:</strong> daniel.gidea24@gmail.com</p>
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/danifg11" target="_blank"
+                >github.com/danifg11</a
+              >
+            </p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a
+                href="www.linkedin.com/in/daniel-gidea-762392306"
+                target="_blank"
+                >Daniel Gidea</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Daniel Florinel Gidea</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
